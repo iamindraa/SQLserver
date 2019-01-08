@@ -1,0 +1,2 @@
+SELECT id, car FROM DBO.tblcars
+		WHERE id=(CASE WHEN @id>0 THEN @id ELSE id END)
